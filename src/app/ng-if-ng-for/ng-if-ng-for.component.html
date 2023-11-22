@@ -1,0 +1,21 @@
+<h1>ng if e ng for</h1>
+
+<h2>ngif</h2>
+<h1 *ngIf = "true">nao sera exibido enquanto for false</h1>
+<h1 *ngIf = "false">não sera exibido enquanto for false</h1>
+
+
+<input type="text" (input)="numeroif = $event.target.value"/>
+<h3 *ngIf="numeroif > 5"> se > 5 sera exibido</h3>
+
+<h2>laço de repetiçã ngFor</h2>
+<h4 *ngFor="let n of arrForNumero">{{n}}</h4>
+
+<h2>mais uma combinação de ngif e ngfor</h2>
+
+
+<div *ngFor="let n2 of arrForIfNome">
+    <h3 *ngIf="n2 !== 'jairo' ">{{n2}}</h3>
+</div >
+
+

@@ -1,0 +1,18 @@
+<h1>primeiro Componentes!</h1>
+
+<h2>Data binding</h2>
+
+<input type="text" (input)="this.numero=$event.target.value"/><!-- pega o valor digitado pelo ussuario que é o event.target.value, e atribui como valor para a variavel numero-->
+<h3>{{numero}}</h3><!-- mostra na tela o valor atribuido a variavel numero-->
+
+<h2>obter um valor data binding e mostrar na tela usando função</h2>
+
+<input type="text" (input)="this.obterNumero($event.target.value)"/>
+<h3>{{this.numero2}}</h3>
+<app-segundo></app-segundo>
+
+
+
+
+
+
